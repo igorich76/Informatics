@@ -1,0 +1,11 @@
+function _Xor (x, y:boolean): boolean;
+begin
+  if x = y then Result := false;
+  if x <> y then Result := true;
+end;
+
+var (x, y, flag1, flag2) := (ReadlnInteger(), ReadlnInteger(), false, false);
+flag1 := x <> 0;
+flag2 := y <> 0;
+if _Xor(flag1,flag2) then Print(1) else Print(0);
+//integer( _Xor(flag1,flag2) ).Print; // можно так, называется, каст...
