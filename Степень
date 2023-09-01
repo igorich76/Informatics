@@ -1,0 +1,13 @@
+function power(a: real; n: longint): real;
+begin
+  var rez := 1.0;
+  for var i:=1 to n do rez := rez * a;
+  Result := rez;
+end;
+var a: real;
+var n: longint;
+begin
+  Read(a);
+  Read(n);
+  Write(power(a, n));
+end.
