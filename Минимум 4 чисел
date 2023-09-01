@@ -1,0 +1,11 @@
+function min (a,b,c,d: integer):integer;
+begin
+  Result := a;
+  if (b < Result) then Result := b;
+  if (c < Result) then Result := c;
+  if (d < Result) then Result := d;
+end;
+begin
+var (a,b,c,d) := ReadlnInteger4();
+Print(min(a,b,c,d));
+end.
